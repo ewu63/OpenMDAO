@@ -329,7 +329,7 @@ class pyOptSparseDriver(Driver):
                                  value=input_vals[name],
                                  lower=meta['lower'], upper=meta['upper'])
 
-        opt_prob.finalizeDesignVariables()
+        opt_prob._finalizeDesignVariables()
 
         # Add all objectives
         objs = self.get_objective_values()
